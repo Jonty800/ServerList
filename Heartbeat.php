@@ -3,26 +3,27 @@
 <head>
 <title>Server List</title>
 <style type="text/css">
-	table {
-		border: 1px solid black;
-		border-collapse: collapse;
-	}
-	th {
-		border: 1px solid black;
-		padding: 6px;
-		font-weight: bold;
-		background: #CCC;
-	}
-	td {
-		border: 1px solid black;
-		padding: 6px;
-	}
-	.num_posts_col { text-align: center; }
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th {
+	border: 1px solid black;
+	padding: 6px;
+	font-weight: bold;
+	background: #CCC;
+}
+td {
+	border: 1px solid black;
+	padding: 6px;
+}
+.num_posts_col {
+	text-align: center;
+}
 </style>
 </head>
 <body>
 <h1>800Craft Servers</h1>
-
 <?php
 error_reporting(E_ALL);
 ini_set('error_reporting', E_ALL);
@@ -30,21 +31,15 @@ ini_set('display_errors',1);
 $ServerName = $_POST['ServerName']; 
 $Url = $_POST['Url'];
 if(!isset($Url)){
-die();
+	die();
 }
 $Players = $_POST['Players'];
 $MaxPlayers = $_POST['MaxPlayers'];
 $Uptime = $_POST['Uptime'];
 $Time = date('Y-m-d H:i:s');
 $HourAgo = date('Y-m-d H:i:s', strtotime('-15 minutes'));
-echo $ServerName . "<br>";
-echo $Url . "<br>";
-echo $Players . "<br>";
-echo $MaxPlayers . "<br>";
-echo $Time . "<br>";
-echo $HourAgo . "<br>";
 
-$Conn = mysqli_connect("YourMySqlDetails);
+$Conn = mysqli_connect("YourMySqlDetails");
 // Check connection
 if (mysqli_connect_errno())
   {

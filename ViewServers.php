@@ -2,94 +2,76 @@
 <html>
 <head>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.tablesorter.js"></script> 
+<script type="text/javascript" src="jquery.tablesorter.js"></script>
 <title>Server List</title>
 <style type="text/css">
-table,td
-{
-	border               : 1px solid #CCC;
-	border-collapse      : collapse;
-  font                 : small/1.5 "Tahoma", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif;
+table, td {
+	border : 1px solid #CCC;
+	border-collapse : collapse;
+	font : small/1.5 "Tahoma", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif;
 }
-table
-{
-	border                :none;
-	border                :1px solid #CCC;
+table {
+	border : none;
+	border : 1px solid #CCC;
 }
-thead th,
-tbody th
-{
-	background            : #FFF url(th_bck.gif) repeat-x;
-  color                 : #666;  
-	padding               : 5px 10px;
-  border-left           : 1px solid #CCC;
+thead th, tbody th {
+	background : #FFF url(th_bck.gif) repeat-x;
+	color : #666;
+	padding : 5px 10px;
+	border-left : 1px solid #CCC;
 }
-tbody th
-{
-  background            : #fafafb;
-  border-top            : 1px solid #CCC;
-  text-align            : left;
-  font-weight           : normal;
+tbody th {
+	background : #fafafb;
+	border-top : 1px solid #CCC;
+	text-align : left;
+	font-weight : normal;
 }
-tbody tr td
-{
-	padding               : 5px 10px;
-  color                 : #666;
+tbody tr td {
+	padding : 5px 10px;
+	color : #666;
 }
-tbody tr:hover
-{
-  background            : #FFF url(tr_bck.gif) repeat;
+tbody tr:hover {
+	background : #FFF url(tr_bck.gif) repeat;
 }
-
-tbody tr:hover td
-{
-  color                 : #454545;
+tbody tr:hover td {
+	color : #454545;
 }
-tfoot td,
-tfoot th
-{
-  border-left           : none;
-  border-top            : 1px solid #CCC;
-	padding               : 4px;
-  background            : #FFF url(foot_bck.gif) repeat;
-  color                 : #666;
+tfoot td, tfoot th {
+	border-left : none;
+	border-top : 1px solid #CCC;
+	padding : 4px;
+	background : #FFF url(foot_bck.gif) repeat;
+	color : #666;
 }
-caption
-{
-	text-align            : left;
-	font-size             : 120%;
-	padding               : 10px 0;
-	color                 : #666;
+caption {
+	text-align : left;
+	font-size : 120%;
+	padding : 10px 0;
+	color : #666;
 }
-table a:link
-{
-	color                 : #666;
+table a:link {
+	color : #666;
 }
-table a:visited
-{
-	color                 : #666;
+table a:visited {
+	color : #666;
 }
-table a:hover
-{
-	color                 : #003366;
-	text-decoration       : none;
+table a:hover {
+	color : #003366;
+	text-decoration : none;
 }
-table a:active
-{
-	color                 : #003366;
+table a:active {
+	color : #003366;
 }
 table.tablesorter thead tr .header {
 	cursor: pointer;
 }
-
 table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
-background-color: #8dbdd8;
+	background-color: #8dbdd8;
 }
 </style>
 </head>
 <body>
 <img src="http://i.imgur.com/V4gNq3k.png" alt="Logo" />
-
 <?php
 $Conn = mysqli_connect("YourMySqlDetails");
 // Check connection
@@ -151,6 +133,5 @@ $(document).ready(function()
     } 
 ); 
 </script>
-
 </body>
-</html>		
+</html>
