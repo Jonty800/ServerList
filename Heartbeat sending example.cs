@@ -1,6 +1,7 @@
 static void Send800CraftNetBeat()
         {
-            if ( Server."http://YourServerUrl";
+            if ( Server.Uri == null ) return;
+            string uri = "http://YourWebsite.Com/Heartbeat.php";
             // create a request
             try {
                 HttpWebRequest request = ( HttpWebRequest )WebRequest.Create( uri );
